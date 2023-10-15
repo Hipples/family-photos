@@ -34,20 +34,20 @@ const ImageSlider = ({ images }) => {
       <button 
         onClick={showPrevImage} 
         className='img-slider-btn' 
-        style={{ left: 0 }}
+        style={{ left: -37 }}
         aria-label='View Previous Image' >
         <ArrowBigLeft aria-hidden />
       </button>
       <button 
         onClick={showNextImage}
         className='img-slider-btn' 
-        style={{ right: 0 }}
+        style={{ right: -45 }}
         aria-label='View Next Image' >
         <ArrowBigRight aria-hidden />
       </button>
       <div style={{ 
         position: 'absolute', 
-        bottom: '.5rem', 
+        bottom: '-1.5rem', 
         left: '50%', 
         translate: '-50%',
         display: 'flex',
