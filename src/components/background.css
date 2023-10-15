@@ -1,0 +1,9 @@
+body {
+  margin: 0 auto;
+}
+
+.background {
+  background: url("../assets/wood-wall-with-frame.jpg") repeat center;
+  background-size: contain;
+  height: 100vh;
+}
