@@ -4,3 +4,11 @@ body {
   background-size: 1100px 700px;
   background-position: right top;
 }
+
+section {
+  position: fixed;
+  height: 353px;
+  width: 580px;
+  top: 25%;
+  left: 31.5%;
+}

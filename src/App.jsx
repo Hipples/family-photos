@@ -10,11 +10,11 @@ const albumDetails = {
 }
 
 const App = () => (
-  <div className="background">
+  <div>
     <HangingSign albumDetails={albumDetails}/>
-    {/* <section style={{ maxWidth: "600px", width: '100%', aspectRatio: '1', margin: "0 auto" }}>
+    <section>
       <ImageSlider images={IMAGES} />
-    </section> */}
+    </section>
   </div>
 );
 
