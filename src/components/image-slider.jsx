@@ -18,38 +18,36 @@ const ImageSlider = ({ images }) => {
       return index + 1;
     });
   }
+  const isActive = (index) => sliderIndex === index;  
 
   return (
-    <section 
-      aria-label="Image Slider"
-      style={{ width: '100%', height: '100%', position: 'relative' }} >
+    <>
       <a href="#after-image-slider-controls" className="skip-link">Skip Image Slider Controls</a>
-      <div style={{ width: '100%', height: '100%', display: 'flex', overflow: 'hidden' }}>
+      <div className='img-slider-container'>
         {images.map(({ url, alt }, index) => (
           <img 
             key={url} src={url} alt={alt}
-            aria-hidden={sliderIndex !== index}
-            className="img-slider-img"
-            style={{ translate: `${-100 * sliderIndex}%` }} />
+            aria-hidden={!isActive(index)}
+            className={`img-slider-img ${isActive(index) ? 'active' : ''}`} />
         ))}
       </div>
       <button 
         onClick={showPrevImage} 
         className='img-slider-btn' 
-        style={{ left: 0 }}
+        style={{ left: -37 }}
         aria-label='View Previous Image' >
         <ArrowBigLeft aria-hidden />
       </button>
       <button 
         onClick={showNextImage}
         className='img-slider-btn' 
-        style={{ right: 0 }}
+        style={{ right: -45 }}
         aria-label='View Next Image' >
         <ArrowBigRight aria-hidden />
       </button>
       <div style={{ 
         position: 'absolute', 
-        bottom: '.5rem', 
+        bottom: '-1.5rem', 
         left: '50%', 
         translate: '-50%',
         display: 'flex',
@@ -65,7 +63,7 @@ const ImageSlider = ({ images }) => {
           ))}
       </div>
       <div id="after-image-slider-controls" />
-    </section>
+    </>
   );
 }
 
