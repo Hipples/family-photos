@@ -4,33 +4,3 @@ body {
   background-size: 1100px 700px;
   background-position: right top;
 }
-
-img {
-  height: 500px;
-  width: 500px;
-  position: relative;
-  top: -20px;
-  left: -80px;
-}
-
-/* Container holding the image and the text */
-.sign-container {
-  position: fixed;
-  color: white;
-}
-
-.sign-text {
-  position: absolute;
-  top: 48%;
-  left: 11%;
-  width: 260px;
-  height: 125px;
-  font-size: 15px;
-}
-
-.sign-date {
-  position: absolute;
-  top: 77%;
-  left: 35%;
-  font-size: 20px;
-}
