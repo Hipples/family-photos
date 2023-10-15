@@ -1,6 +1,6 @@
 body {
   margin: 0 auto;
-  background: url("./assets/wood-wall-with-frame.jpg");
+  background: url("./assets/wood-wall-with-frame.jpg") fixed;
   background-size: 950px 700px;
-  background-position: center bottom;
+  background-position: center top;
 }

@@ -6,7 +6,7 @@ import './background.css';
 
 const App = () => (
   <div className="background">
-    {/* <Header /> */}
+    <Header />
     {/* <section style={{ maxWidth: "600px", width: '100%', aspectRatio: '1', margin: "0 auto" }}>
       <ImageSlider images={IMAGES} />
     </section> */}
